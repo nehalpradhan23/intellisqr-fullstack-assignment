@@ -96,3 +96,39 @@ Clone the project
 - Backend nodejs server with routes and controllers
 - Tailwind CSS for styling
 
+## Project Structure
+
+```markdown
+├── 📂 backend
+│ ├─── 📂 prisma
+│ │     └─ 📄schema.prisma - (Prisma User schema)
+│ └─── 📂 src
+│       ├─ 📂controllers
+│       │   └──📄auth.controller.ts - (User API endpoints - login and signup)
+│       ├─ 📂db
+│       │   └──📄prisma.ts - (Prisma Database connection)
+│       ├─ 📂routes
+│       │   └──📄auth.route.ts - (express routes - login and signup)
+│       └─ 📄index.ts - (nodejs entry point)
+├─ 📂 frontend
+│   ├─ 📂 src
+│   │   ├─ 📂components
+│   │   │   └─ 📄InputBox.tsx - (Reusable input box component)
+│   │   ├─ 📂hooks
+│   │   │   └─ 📄useAuth.tsx - (Authentication to check User token and redirection)
+│   │   ├─ 📂pages
+│   │   │   ├─ 📄Home.tsx - (Home page)
+│   │   │   ├─ 📄Login.tsx - (Login page)
+│   │   │   └─ 📄Register.tsx - (Register page)
+│   │   ├─ 📄App.tsx - (Root component)
+│   │   ├─ 📄App.css
+│   │   ├─ 📄index.css
+│   │   └─ 📄main.tsx - (Entry point)
+│   ├─ 📄.env - (Environment variables)
+│   ├─ 📄package.json
+│   └─ 📄tsconfig.json
+├─ 📄package.json
+├─ 📄readme.md
+├─ 📄tsconfig.json
+└─ 📄.env - (environment variables)
+```
