@@ -7,6 +7,9 @@ dotenv.config();
 
 const app = express();
 
+const PORT = process.env.PORT || 4001;
+console.log(PORT);
+
 app.use(express.json()); // for parsing application/json data
 
 app.use(cors({ origin: process.env.ORIGIN_URL, credentials: true }));
@@ -17,6 +20,6 @@ app.get("/", (req, res) => {
   res.send("Hello world");
 });
 
-app.listen(4001, () => {
-  console.log("server running on port 4001");
+app.listen(PORT, () => {
+  console.log(`server running on port ${PORT || 4001}`);
 });
