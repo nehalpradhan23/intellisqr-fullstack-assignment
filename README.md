@@ -7,7 +7,7 @@ Clone the project
   git clone https://github.com/nehalpradhan23/intellisqr-fullstack-assignment
 ```
 
-## Backend Setup
+# Backend Setup
 
 ### Go to the project root directory
 
@@ -48,7 +48,7 @@ Clone the project
   npm run dev
 ```
 
-## Frontend setup
+# Frontend setup
 
 ### Go to project frontend directory
 
@@ -75,3 +75,24 @@ Clone the project
 ```bash
   npm run dev
 ```
+
+## Tech Stack
+
+**Client:** React, Vite, TailwindCSS, axios, react-hook-form, react-router, zod, Typescript
+
+**Server:** Node, Express, Prisma, Typescript
+
+
+## Features
+
+- Typescript for type safety
+- Zod for schema validation
+- React Hook Form for form management
+- React Query(Tanstack Query) for data fetching
+- Prisma for database management
+- Neon DB for storing data.
+- Custom Input component for input fields
+- Custom hook for user authentication
+- Backend nodejs server with routes and controllers
+- Tailwind CSS for styling
+
